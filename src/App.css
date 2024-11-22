@@ -1,0 +1,99 @@
+:root {
+  --background-color: #141428;
+  --primary-color: #00aaff;
+  --button-bg: #0077cc;
+  --button-hover-bg: #005599;
+  --button-text: white;
+  --text-color: white;
+}
+
+/* Reset dan Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--background-color, #1e1e2f);
+  color: var(--text-color, white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Header dan Heading */
+h1, h2 {
+  margin: 0;
+  padding: 20px 0;
+  color: var(--primary-color, #00f0ff);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Tombol */
+button {
+  padding: 10px 20px;
+  background-color: var(--button-bg, #00aaff);
+  border: none;
+  color: var(--button-text, white);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg, #0088cc);
+  transform: scale(1.05);
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
